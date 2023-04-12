@@ -18,6 +18,19 @@
     $jana ->pozdrav();
     echo "<br>";
     $dalibor ->pozdrav();
+    echo "<br>";
 
+    if(class_exists("Clovek")){
+       echo "Ano, třída existuje"; 
+    } else{
+        echo "Pozor, třída neexistuje";
+    }
+    echo "<br>";
+
+    if(method_exists("Clovek", "pozdrav")){
+        echo "Ano, metoda existuje";
+    } else{
+        echo "Pozor, metoda neexistuje";
+    }
 
 ?>
