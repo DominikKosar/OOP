@@ -15,6 +15,10 @@
             echo "Ahoj, já jsem ".$this->jmeno." ".$this->prijmeni;
         }
 
+        public function __toString(){
+            return $this->jmeno." ".$this->prijmeni;
+        }
+
         /*public function jduDoPrace(){
             echo "Zrovna vyrážím do práce, ".$this->jmeno." a je ".date("H:i:s");   //hodiny, minuty, sekundy
         }*/
@@ -30,5 +34,12 @@
     $jana ->pozdrav();
     echo "<br>";
     $dalibor ->pozdrav();
+    echo "<br>";
+    echo $pavel;
+    echo "<br>";
+    echo $jana;
+    echo "<br>";
+    echo $dalibor;
+    echo "<br>";
 
 ?>
